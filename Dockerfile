@@ -5,7 +5,5 @@ RUN pip install --no-cache-dir -r requirements.txt --use-deprecated=legacy-resol
 # RUN pip install setuptools
 COPY . .
 RUN pip install .
-RUN pip uninstall pynubank
-RUN pip install git+https://github.com/gutobenn/pynubank@pix_events
 COPY nubank_sync_ynab/logging.json /usr/local/lib/python3.6/site-packages/nubank_sync_ynab/
 ENTRYPOINT python /usr/local/lib/python3.6/site-packages/nubank_sync_ynab/sync.py
