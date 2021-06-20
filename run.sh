@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-DEF_CONFIG_DIR=$(realpath ~/.config)/nubank_sync_ynab
+DEF_CONFIG_DIR=$(realpath /var/nubank_sync_ynab)
 CFG_DIR=${CONFIG_DIR:-$DEF_CONFIG_DIR}
 VOLUME=$CFG_DIR:/tmp/nubank_sync_ynab
 
