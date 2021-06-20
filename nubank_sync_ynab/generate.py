@@ -57,7 +57,7 @@ def gen_cert(password):
     with open(tmp_path('cert.p12'), 'wb') as cert_file:
         cert_file.write(cert1.export())
         log(f'{Fore.YELLOW}Certificate P12 stored')
-    with open(TMP_PATH, 'wb') as cert_file:
+    with open(tmp_path('cert'), 'wb') as cert_file:
         cert_content = base64.b64encode(cert1.export())
         cert_file.write(cert_content)
         log(f'{Fore.YELLOW}Certificate stored')
