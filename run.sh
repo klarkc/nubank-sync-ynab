@@ -19,7 +19,7 @@ else
     YNAB_PASSWORD=$(cat $CFG_DIR/ynab_pass)
     YNAB_BUDGET=$(cat $CFG_DIR/ymab_budget)
     docker-compose run \
-        -v $VOLUME
+        -v $VOLUME \
         -e STARTING_POINT=$STARTING_POINT \
         -e NUBANK_CERT=$NUBANK_CERT \
         -e NUBANK_TOKEN=$NUBANK_TOKEN \
