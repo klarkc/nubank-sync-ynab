@@ -1,6 +1,6 @@
 #!/bin/bash
 set -e
-if [ $1 == "generate" ]; then
+if [[ $1 == "generate" ]]; then
     docker-compose run generate
 else
     DEF_STARTING_POINT=$(date -d "$(systemctl show nubank-sync-ynab.timer --property=ActiveEnterTimestamp |
