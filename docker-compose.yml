@@ -5,5 +5,3 @@ services:
     generate:
         build: .
         entrypoint: python /usr/local/lib/python3.6/site-packages/nubank_sync_ynab/generate.py
-        volumes: 
-            - /tmp/nubank_sync_ynab:/tmp/nubank_sync_ynab
